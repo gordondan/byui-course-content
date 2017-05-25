@@ -1,5 +1,5 @@
-node_modules
-
+#node_modules
+#It is seems wrong to commit the node_modules, but that is what azure wants
 *.log
 *.swo
 *.swp
