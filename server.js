@@ -94,6 +94,7 @@ app.post('/launch-lti', bodyParser.urlencoded({ extended: false }), handleLaunch
 var server = require('http')
 	.createServer(app)
 	.listen(1337, function () {
+		console.log("process.env.port: " + process.env.port + "\r\n");
 		var address = server.address();
 		console.log('Listening on %s:%s', address.address, address.port);
 	});
