@@ -93,7 +93,7 @@ app.post('/launch-lti', bodyParser.urlencoded({ extended: false }), handleLaunch
 
 var server = require('http')
 	.createServer(app)
-	.listen(80, function () {
+	.listen(1337, function () {
 		var address = server.address();
 		console.log('Listening on %s:%s', address.address, address.port);
 	});
