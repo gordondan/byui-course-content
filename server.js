@@ -80,9 +80,9 @@ var app = express();
 
 app.set('json spaces', 2);
 
-app.get('/launch-lti',function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('This requires an LTI request\n');
+//app.get('/launch-lti',function (req, res) {
+//    res.writeHead(200, { 'Content-Type': 'text/plain' });
+//    res.end('This requires an LTI request\n');
 
 // If using reverse proxy to terminate SSL
 // Such as an Elastic-Load-Balence, ElasticBeanstalk, Heroku
