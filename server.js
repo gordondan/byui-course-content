@@ -80,7 +80,7 @@ var app = express();
 
 app.set('json spaces', 2);
 
-app.get('/lauch-lti',function (req, res) {
+app.get('/launch-lti',function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('This requires an LTI request\n');
 
