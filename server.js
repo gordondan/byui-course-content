@@ -10,6 +10,7 @@ var nonceStore = new lti.Stores.MemoryStore();
 var secrets = Object.create(null);
 secrets.key = 'secret';
 secrets["secret"] = "This is my secret"; //TODO I don't understand how this is supposed to work, this line is a hack to clear the error
+secrets["AzureTry"] = "This is my Azure secret"; //TODO I don't understand how this is supposed to work, this line is a hack to clear the error
 
 function getSecret (consumerKey, cb) {
 	var secret = secrets[consumerKey];
